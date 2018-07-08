@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+p {
+  text-align: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+body {
+  background: #3498db;
+}
+
+.jumbotron {
+  background-color: #e74c3c;
+  border-bottom-style: solid;
+  border-color: white;
+}
+
+#label {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 50%;
+}
+
+#heroImage {
+  height: 500px;
+  width: 100%;
+}
