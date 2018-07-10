@@ -13,18 +13,22 @@ $(function(){
 			$('.info').empty();
 			$('#comics').empty();
 
+
 			var results = data.data.results[0]
-			$('.pic').prepend(" <img src='"+results.thumbnail.path+"/portrait_uncanny.jpg'/> ")
-			$('.info').append("<p> '"+results.description+"' </p><br>")
+			$('.pic').prepend(" <img class='clearfix' src='"+results.thumbnail.path+"/portrait_uncanny.jpg'/> ")
+			$('.info').append("<p> '"+results.description+"' </p>")
 
 			var series = results.series.items
-
+			var list = "<ul>"
 			$.each(series, function(i, comic){
-				$('#comics').prepend("<p> '"+comic.name+"' </p>")
+				list += "<li> '"+comic.name+"' </li>";
+
 			});
+			list += "</ul>"
+
+			$('#comics').prepend(list)
 
 		};
-
 		$.get(queryURL, showInfo)
 	});
 });

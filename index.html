@@ -7,8 +7,6 @@
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quattrocento+Sans" rel="stylesheet">
 
 		<link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -26,13 +24,13 @@
 
 			<div id="form">
 				<p>Welcome to Hero Finder! Here you can find information on almost any Marvel Hero! Enter the
-				hero's name and a picture and description will appear on the right. Any comic series they have will appear on the bottom
-				along with a link for more info.  </p>
+				hero's name and a picture and description will appear on the right. Some comic series they have been in will appear on the bottom. </p>
 
 				<form>
 				<label id="label" for="monthInput">Enter a marvel hero then click submit</label>
 				<input type="text" class="form-control" id="heroInput" placeholder="Ex: Hulk">
 				</form>
+				<p id="message"></p>
 
 				<button type="submit" id="button" class="btn btn-default">Submit</button>
 
@@ -44,13 +42,14 @@
 					<img id='default' src="assets/images/hero.png" alt="">
 				</div>
 
-				<div class="info" style="padding: 20px;">
+				<div class="info" style="padding: 25px;">
 					<h3 style="text-align:center;">Description</h3>
 				</div>
 
 			</div>
 
 			<div id="comics">
+				<p>Here's a list of some comics the hero was in!</p>
 
 			</div>
 		</div>
