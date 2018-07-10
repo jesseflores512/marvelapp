@@ -2,7 +2,7 @@ $(function(){
 
 //create variables
 
-	$("#button").on("click", function(event){
+	$("#button").click(function(event){
 
 		var hero = $("#heroInput").val().toLowerCase();
 
