@@ -78,6 +78,7 @@ button {
   grid-column: 2/3;
   justify-content: center;
   padding: 25px;
+  font-size: 20px;
 }
 
 /* comics */
